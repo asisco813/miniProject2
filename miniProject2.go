@@ -1,13 +1,13 @@
 package main
 
 import (
-"fmt"
-"gobot.io/x/gobot"
-"gobot.io/x/gobot/drivers/aio"
-"gobot.io/x/gobot/drivers/i2c"
-g "gobot.io/x/gobot/platforms/dexter/gopigo3"
-"gobot.io/x/gobot/platforms/raspi"
-"time"
+	"fmt"
+	"gobot.io/x/gobot"
+	"gobot.io/x/gobot/drivers/aio"
+	"gobot.io/x/gobot/drivers/i2c"
+	g "gobot.io/x/gobot/platforms/dexter/gopigo3"
+	"gobot.io/x/gobot/platforms/raspi"
+	"time"
 )
 
 func robotMainLoop(piProcessor *raspi.Adaptor, gopigo3 *g.Driver, lidarSensor *i2c.LIDARLiteDriver,
@@ -73,5 +73,5 @@ func main() {
 	if err != nil {
 		fmt.Errorf("Error starting Robot #{err}")
 	}
-
+	//hello
 }
