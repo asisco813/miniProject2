@@ -31,13 +31,19 @@ func robotMainLoop(piProcessor *raspi.Adaptor, gopigo3 *g.Driver, lidarSensor *i
 			fmt.Println(message)
 			time.Sleep(time.Second)
 
-			err := gopigo3.SetMotorDps(g.MOTOR_LEFT+g.MOTOR_RIGHT, 20)
+			err := gopigo3.SetMotorDps(g.MOTOR_LEFT+g.MOTOR_RIGHT, 100)
 			if err != nil {
 				fmt.Errorf("Error moving forward %+v", err)
 			}
 		}
 		for lidarReading < 100 {
-			err := gopigo3.SetMotorDps(g.MOTOR_LEFT+g.MOTOR_RIGHT, 20)
+			message := fmt.Sprintf("Lidar Reading: %d", lidarReading)
+
+			fmt.Println(lidarReading)
+			fmt.Println(message)
+			time.Sleep(time.Second)
+
+			err := gopigo3.SetMotorDps(g.MOTOR_LEFT+g.MOTOR_RIGHT, 100)
 			if err != nil {
 				fmt.Errorf("Error moving forward %+v", err)
 			}
@@ -47,9 +53,8 @@ func robotMainLoop(piProcessor *raspi.Adaptor, gopigo3 *g.Driver, lidarSensor *i
 	if err != nil {
 		fmt.Errorf("Error stopping %+v", err)
 	}
-	var lengthOfBox float64 = float64(secondCount) * 20 * .5803
+	var lengthOfBox float64 = float64(secondCount) * 100 * .5803
 	fmt.Sprintf("The length of the box is: %d", lengthOfBox)
-
 }
 
 func main() {
@@ -71,5 +76,4 @@ func main() {
 	if err != nil {
 		fmt.Errorf("Error starting Robot #{err}")
 	}
-	//hello
 }
