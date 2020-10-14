@@ -28,6 +28,8 @@ func robotMainLoop(piProcessor *raspi.Adaptor, gopigo3 *g.Driver, lidarSensor *i
 			}
 			message := fmt.Sprintf("Lidar Reading: %d", lidarReading)
 
+			fmt.Println("Searching for box...")
+
 			fmt.Println(lidarReading)
 			fmt.Println(message)
 			time.Sleep(time.Second)
