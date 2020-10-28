@@ -114,7 +114,7 @@ func robotMainLoop(piProcessor *raspi.Adaptor, gopigo3 *g.Driver, lidarSensor *i
 	}
 	stop(gopigo3)
 	var lengthOfBox float64 = float64(secondCount) * 100 * .5803
-	fmt.Sprintf("The length of the box is: %d", lengthOfBox)
+	fmt.Printf("The length of the box is: %d", lengthOfBox)
 
 }
 
