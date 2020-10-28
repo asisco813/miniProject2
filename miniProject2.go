@@ -11,9 +11,9 @@ import (
 )
 
 const (
-	TOO_CLOSE    = 50
-	TOO_FAR      = 150
-	OUT_OF_RANGE = 200
+	TOO_CLOSE    = 5
+	TOO_FAR      = 30
+	OUT_OF_RANGE = 100
 )
 
 //hello
