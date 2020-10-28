@@ -12,7 +12,7 @@ import (
 
 const (
 	TOO_CLOSE    = 5
-	TOO_FAR      = 40
+	TOO_FAR      = 20
 	OUT_OF_RANGE = 100
 )
 
