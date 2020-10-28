@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="acf54197-0161-40ef-bd07-ceda285fcf9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/miniProject2.go" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject2.go" afterDir="false" />
-    </list>
+    <list default="true" id="acf54197-0161-40ef-bd07-ceda285fcf9d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,17 +37,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add hello" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hello" />
+    <MESSAGE value="adjusted the numbers for too close or too far away" />
+    <MESSAGE value="adjusted turn function to better rotate 180 degrees" />
+    <MESSAGE value="adjusted turn function to better rotate 180 degrees V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted turn function to better rotate 180 degrees V2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="333" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602091195058">
       <screen x="0" y="23" width="1742" height="1097" />
     </state>
     <state x="333" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1742.1097@0.23.1742.1097" timestamp="1602091195058" />
-    <state x="458" y="127" key="CommitChangelistDialog2" timestamp="1603904291056">
+    <state x="458" y="127" key="CommitChangelistDialog2" timestamp="1603904838015">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="458" y="127" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1603904291056" />
+    <state x="458" y="127" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1603904838015" />
     <state x="445" y="147" key="CommitChangelistDialog2/0.23.1742.1097@0.23.1742.1097" timestamp="1602091770828" />
     <state x="729" y="475" key="Github.ShareDialog" timestamp="1602091308506">
       <screen x="0" y="23" width="1744" height="1097" />
@@ -59,10 +60,10 @@
       <screen x="0" y="23" width="1744" height="1097" />
     </state>
     <state x="692" y="283" key="Github.UntrackedFilesDialog/0.23.1744.1097@0.23.1744.1097" timestamp="1602091315686" />
-    <state x="481" y="294" key="Vcs.Push.Dialog.v2" timestamp="1603904293544">
+    <state x="481" y="294" key="Vcs.Push.Dialog.v2" timestamp="1603904839617">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="481" y="294" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1603904293544" />
+    <state x="481" y="294" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1603904839617" />
     <state x="468" y="311" key="Vcs.Push.Dialog.v2/0.23.1742.1097@0.23.1742.1097" timestamp="1602091776185" />
   </component>
 </project>

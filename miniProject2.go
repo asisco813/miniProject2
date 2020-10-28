@@ -104,10 +104,6 @@ func robotMainLoop(piProcessor *raspi.Adaptor, gopigo3 *g.Driver, lidarSensor *i
 			secondCount += 1
 			//if robot passed the side of the box turn to measure next side
 		} else if lidarReading > OUT_OF_RANGE && turned == false {
-			err := gopigo3.SetMotorDps(g.MOTOR_LEFT+g.MOTOR_RIGHT, 200)
-			if err != nil {
-				fmt.Errorf("Error moving forward %+v", err)
-			}
 			turn(gopigo3)
 			time.Sleep(time.Second)
 			turned = true
