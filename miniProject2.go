@@ -16,6 +16,7 @@ const (
 	OUT_OF_RANGE = 200
 )
 
+//hello
 func stop(gopigo3 *g.Driver) {
 	err := gopigo3.SetMotorDps(g.MOTOR_LEFT+g.MOTOR_RIGHT, 0)
 	if err != nil {

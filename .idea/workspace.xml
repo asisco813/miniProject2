@@ -29,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -56,9 +56,10 @@
       <screen x="0" y="23" width="1744" height="1097" />
     </state>
     <state x="692" y="283" key="Github.UntrackedFilesDialog/0.23.1744.1097@0.23.1744.1097" timestamp="1602091315686" />
-    <state x="468" y="311" key="Vcs.Push.Dialog.v2" timestamp="1602091776185">
-      <screen x="0" y="23" width="1742" height="1097" />
+    <state x="481" y="294" key="Vcs.Push.Dialog.v2" timestamp="1603903918018">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
+    <state x="481" y="294" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1603903918018" />
     <state x="468" y="311" key="Vcs.Push.Dialog.v2/0.23.1742.1097@0.23.1742.1097" timestamp="1602091776185" />
   </component>
 </project>
