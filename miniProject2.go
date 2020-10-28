@@ -54,11 +54,11 @@ func adjust_left(gopigo3 *g.Driver) {
 }
 
 func turn(gopigo3 *g.Driver) {
-	err := gopigo3.SetMotorDps(g.MOTOR_LEFT, -180)
+	err := gopigo3.SetMotorDps(g.MOTOR_LEFT, -90)
 	if err != nil {
 		fmt.Errorf("Error turning left %+v", err)
 	}
-	err = gopigo3.SetMotorDps(g.MOTOR_RIGHT, 180)
+	err = gopigo3.SetMotorDps(g.MOTOR_RIGHT, 90)
 	if err != nil {
 		fmt.Errorf("Error turning left %+v", err)
 	}
