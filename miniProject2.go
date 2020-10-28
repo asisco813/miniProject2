@@ -67,7 +67,6 @@ func turn(gopigo3 *g.Driver) {
 func robotMainLoop(piProcessor *raspi.Adaptor, gopigo3 *g.Driver, lidarSensor *i2c.LIDARLiteDriver,
 
 ) {
-	turned := false
 	err := lidarSensor.Start()
 	if err != nil {
 		fmt.Println("error starting lidarSensor")
@@ -103,17 +102,12 @@ func robotMainLoop(piProcessor *raspi.Adaptor, gopigo3 *g.Driver, lidarSensor *i
 			time.Sleep(time.Second)
 			secondCount += 1
 			//if robot passed the side of the box turn to measure next side
-		} else if lidarReading > OUT_OF_RANGE && turned == false {
-			turn(gopigo3)
-			time.Sleep(time.Second)
-			turned = true
-			//if robot passes the edge of a box and has already turned meaning this is the second side then break
-		} else if lidarReading > OUT_OF_RANGE && turned == true {
+		} else {
 			var lengthOfBox float64 = float64(secondCount) * 100 * .5803
 			fmt.Printf("The length of the box is: %d", lengthOfBox)
+			stop(gopigo3)
 		}
 	}
-	stop(gopigo3)
 	//var lengthOfBox float64 = float64(secondCount) * 100 * .5803
 	//fmt.Printf("The length of the box is: %d", lengthOfBox)
 
