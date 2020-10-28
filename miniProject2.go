@@ -12,7 +12,7 @@ import (
 
 const (
 	TOO_CLOSE    = 5
-	TOO_FAR      = 30
+	TOO_FAR      = 40
 	OUT_OF_RANGE = 100
 )
 
@@ -54,11 +54,11 @@ func adjust_left(gopigo3 *g.Driver) {
 }
 
 func turn(gopigo3 *g.Driver) {
-	err := gopigo3.SetMotorDps(g.MOTOR_LEFT, -90)
+	err := gopigo3.SetMotorDps(g.MOTOR_LEFT, -45)
 	if err != nil {
 		fmt.Errorf("Error turning left %+v", err)
 	}
-	err = gopigo3.SetMotorDps(g.MOTOR_RIGHT, 90)
+	err = gopigo3.SetMotorDps(g.MOTOR_RIGHT, 45)
 	if err != nil {
 		fmt.Errorf("Error turning left %+v", err)
 	}
