@@ -32,22 +32,22 @@ func forward(gopigo3 *g.Driver) {
 }
 
 func adjust_right(gopigo3 *g.Driver) {
-	err := gopigo3.SetMotorDps(g.MOTOR_LEFT, 100)
+	err := gopigo3.SetMotorDps(g.MOTOR_LEFT, 75)
 	if err != nil {
 		fmt.Errorf("Error turning left %+v", err)
 	}
-	err = gopigo3.SetMotorDps(g.MOTOR_RIGHT, 75)
+	err = gopigo3.SetMotorDps(g.MOTOR_RIGHT, 100)
 	if err != nil {
 		fmt.Errorf("Error turning left %+v", err)
 	}
 }
 
 func adjust_left(gopigo3 *g.Driver) {
-	err := gopigo3.SetMotorDps(g.MOTOR_LEFT, 75)
+	err := gopigo3.SetMotorDps(g.MOTOR_LEFT, 100)
 	if err != nil {
 		fmt.Errorf("Error turning left %+v", err)
 	}
-	err = gopigo3.SetMotorDps(g.MOTOR_RIGHT, 100)
+	err = gopigo3.SetMotorDps(g.MOTOR_RIGHT, 75)
 	if err != nil {
 		fmt.Errorf("Error turning left %+v", err)
 	}
