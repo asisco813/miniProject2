@@ -109,12 +109,13 @@ func robotMainLoop(piProcessor *raspi.Adaptor, gopigo3 *g.Driver, lidarSensor *i
 			turned = true
 			//if robot passes the edge of a box and has already turned meaning this is the second side then break
 		} else if lidarReading > OUT_OF_RANGE && turned == true {
-			break
+			var lengthOfBox float64 = float64(secondCount) * 100 * .5803
+			fmt.Printf("The length of the box is: %d", lengthOfBox)
 		}
 	}
 	stop(gopigo3)
-	var lengthOfBox float64 = float64(secondCount) * 100 * .5803
-	fmt.Printf("The length of the box is: %d", lengthOfBox)
+	//var lengthOfBox float64 = float64(secondCount) * 100 * .5803
+	//fmt.Printf("The length of the box is: %d", lengthOfBox)
 
 }
 
